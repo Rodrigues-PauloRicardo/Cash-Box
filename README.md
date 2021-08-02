@@ -1,3 +1,3 @@
 # Cash-Box
 Telas em HTML e CSS 
-![Screenshot](Captura de tela.png)
+![Screenshot](imgs/Captura de tela.png)
