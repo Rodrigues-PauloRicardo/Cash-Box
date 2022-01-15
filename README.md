@@ -16,7 +16,7 @@ Tabela de conteúdos
    * [confirmação]
 <!--te-->
 
-[![Netlify Status](https://boxcash.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a3a832a2-bb8a-4b88-8bd6-ed1ca9b3788f/deploy-status)](https://app.netlify.com/sites/boxcash/deploys)
 
 ### 🛠 Tecnologias
 HTML e CSS
