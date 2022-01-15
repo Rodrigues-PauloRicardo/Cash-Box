@@ -17,7 +17,6 @@ Tabela de conteúdos
 <!--te-->
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a3a832a2-bb8a-4b88-8bd6-ed1ca9b3788f/deploy-status)](https://boxcash.netlify.app/)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0a8ce824-9217-47e1-8b45-14d7e612ca32/deploy-status)](https://portifolio-pauloricardo.netlify.app/)
 
 ### 🛠 Tecnologias
 HTML e CSS
