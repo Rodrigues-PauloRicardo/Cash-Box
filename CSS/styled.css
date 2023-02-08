@@ -13,7 +13,8 @@ html {
 }
 
 body{
-    width: 100vw;
+    min-height: 100vh; 
+    min-width: 100vw;
     background-color: rgb(236, 227, 227);
 }
 
@@ -22,14 +23,17 @@ img{
     border-radius: 8px;
 }
 
-
-section{   
-    margin-top: 10%; 
+section{
+    min-height: 100vh;
+    margin: 5%;  
     display: flex;
     flex-direction: column;
-    align-items: center;
-           
+    align-items: center; 
+    overflow: hidden; 
 }
+/* ----------------------------------------------*/
+
+
 
 .container{
     display: flex;
@@ -39,7 +43,7 @@ section{
     width: 260px;
 }
 
-input{
+.input{
     margin-top: 20px;
     display: flex;
     align-self: center;
@@ -48,6 +52,7 @@ input{
     border-radius: 5px;
     padding: 4%;
 }
+
 
 button{
     height: 35px;
@@ -59,15 +64,56 @@ button{
     margin-top: 35px;
     background-color: red;
     color: white;
-    }
+    }   
 
-footer{
-    font-size: 13px;
-    width: 100%;
-    position: absolute;
+
+footer{  
+    margin-bottom: 5px;
     display: flex;
-    justify-content: center;
-    text-align: center;
-    bottom: 15px; 
+    justify-content: center;    
+    width: 100%;
 }
 
+.titulo{    
+    text-align: center;
+    font-weight: bold;
+    }
+
+#bsa{
+    height: 70px;
+    }
+
+#caixa{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 260px;
+    height: 70px;
+}
+.img_pix{
+    margin-top: 15px;
+   width: 150px;
+}
+
+.chave{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: auto;
+    height: 25px;
+    width: 260px;
+    margin-top: 15px;
+}
+.confirm{
+    margin-top: 35px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 70px;
+    font-weight: bold;    
+}
+ul{
+    margin-top: 30px;
+    line-height: 40px;   
+}
