@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS\styled.css">
+    <script src="index.js"></script>
     <title>Box Cash</title>
 </head>
 
@@ -16,11 +17,11 @@
 
         <div class="container">
 
-            <input type="text" list="cidade" placeholder="Escolha a Cidade" class="input">
+            <input type="text" list="cidade" placeholder="Escolha a Cidade" class="input">            
             <datalist id="cidade">
                 <option value="Sapucaia"></option>
-                <option value=""></option>
-                <option value=""></option>
+                <option value="Esteio"></option>
+                <option value="São Leopoldo"></option>                
             </datalist>
 
             <br>
@@ -34,14 +35,15 @@
             </datalist>
         </div>
 
-        <form method="get" action="/boxCash2.html">
-            <button type="submit">ESCOLHER VAGA</button>
-        </form> 
+        
+            <button type="submit" onclick="next_page()">AVANÇAR</button>
+        
 
     
 
  </section>
            <footer>Desenvolvido por Paulo Ricardo<br>Todos os direitos reservados®</footer>
 </body>
+
 
 </html>
