@@ -13,9 +13,7 @@ function next_page() {
 
 
 function next_page2() {
-
 var radios = document.getElementsByName('radio');
-
 for (var i = 0; i < radios.length; i++) {
   if (radios[i].checked) {
      console.log('O radiobutton ' + (i+1) + ' foi selecionado.');
@@ -23,6 +21,17 @@ for (var i = 0; i < radios.length; i++) {
      console.log(vaga + ' é a vaga TAL');
      window.location.href ="/boxCash3.html";   
   }
+}
+}
+
+function confirm(){
+    var newName = document.getElementById('nome').value;
+    var newFone = document.getElementById('fone').value;
+
+    if (newName === '' || newFone === ''){
+    alert('Preencha todos os Campos')
+}else{
+    window.location.href ="/confirm.html";
 }
 }
 

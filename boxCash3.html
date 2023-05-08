@@ -23,8 +23,8 @@
       <input type="radio" name="radios" id="radios"> 48 Horas (R$ 45,00)
     </div>
     <div id="caixa">
-      <input type="text" id="bsa" placeholder="Seu nome"> <br>
-      <input type="number" name="" id="bsa" placeholder="(51)9999-9999">
+      <input type="text" id="nome" placeholder="Seu nome"> <br>
+      <input type="number" id="fone" placeholder="(51)9999-9999">
     </div>
 
     <img class="img_pix" src="/imgs/logo_pix.png" alt="">
@@ -37,12 +37,13 @@
       <button type="submit">VEJA AS REGRAS</button>
     </form>
 
-    <form method="get" action="/confirm.html">
-      <button type="submit">JÁ EFETUEI O PIX</button>
-    </form>
+   
+      <button type="submit" onclick="confirm()">JÁ EFETUEI O PIX</button>
+   
 
   </section>
 
 </body>
+<script src="index.js"></script>
 
 </html>
