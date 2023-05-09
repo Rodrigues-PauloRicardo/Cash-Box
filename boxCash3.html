@@ -13,34 +13,32 @@
 
   <section>
     <img src="/imgs/logo.png" alt="">
-
+  
     <br>
     <div class="radios">
       <p class="titulo">O tempo começa a contar 15 minutos <br>
         depois de efetuado o pagamento.</p> <br>
-      <input type="radio" name="radios" id="radios" checked> 12 Horas (R$ 15,00) <br> <br>
-      <input type="radio" name="radios" id="radios"> 24 Horas (R$ 25,00) <br> <br>
-      <input type="radio" name="radios" id="radios"> 48 Horas (R$ 45,00)
+      <input type="radio" name="radios" id="radio1" value="12 Horas (R$ 15,00)" checked> 12 Horas (R$ 15,00) <br> <br>
+      <input type="radio" name="radios" id="radio2" value="24 Horas (R$ 25,00)"> 24 Horas (R$ 25,00) <br> <br>
+      <input type="radio" name="radios" id="radio3" value="48 Horas (R$ 45,00)"> 48 Horas (R$ 45,00)
     </div>
     <div id="caixa">
       <input type="text" id="nome" placeholder="Seu nome"> <br>
       <input type="number" id="fone" placeholder="(51)9999-9999">
     </div>
-
+  
     <img class="img_pix" src="/imgs/logo_pix.png" alt="">
-
+  
     <div class="chave">
       <p>CHAVE PIX - boxcash@gmail.com</p>
     </div>
-
+  
     <form method="get" action="/regras.html">
       <button type="submit">VEJA AS REGRAS</button>
     </form>
-
-   
-      <button type="submit" onclick="confirm()">JÁ EFETUEI O PIX</button>
-   
-
+  
+    <button type="submit" onclick="confirme()">JÁ EFETUEI O PIX</button>
+  
   </section>
 
 </body>

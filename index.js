@@ -3,6 +3,8 @@ function next_page() {
     var city = inputA.value;
     var inputB = document.querySelector('input[list="condominio"]');
     var condominio = inputB.value;
+    localStorage.setItem('cidade', city);
+    localStorage.setItem('condominio', condominio);
 
     if (city === '' || condominio === ''){
         alert('Selecione Todos os Campos');              
@@ -14,6 +16,7 @@ function next_page() {
 
 function next_page2() {
 var radios = document.getElementsByName('radio');
+localStorage.setItem('vaga', vaga);
 for (var i = 0; i < radios.length; i++) {
   if (radios[i].checked) {
      console.log('O radiobutton ' + (i+1) + ' foi selecionado.');
@@ -24,16 +27,40 @@ for (var i = 0; i < radios.length; i++) {
 }
 }
 
-function confirm(){
-    var newName = document.getElementById('nome').value;
-    var newFone = document.getElementById('fone').value;
+function confirme(){
+    
+    var fone = document.getElementById('fone').value; 
+    
+    var nome = localStorage.getItem(nome);
+    var cidade = localStorage.getItem('cidade');
+    var condominio = localStorage.getItem('condominio');  
 
-    if (newName === '' || newFone === ''){
-    alert('Preencha todos os Campos')
-}else{
-    window.location.href ="/confirm.html";
+
+    if (nome === '' || fone === '') {
+      alert('Preencha todos os Campos')
+    } else {
+        window.location.href = "/confirm.html?cidade=" + cidade + "&condominio=" + condominio + "&nome=" + nome + "&fone=" + fone;    
+    }
 }
-}
+  var params = new URLSearchParams(window.location.search);
+  var nome = params.get('nome');
+  var fone = params.get('fone');
+  var cidade = params.get('cidade');
+  var condominio = params.get('condominio');
+
+
+
+
+  var res = document.getElementById('respCity');
+  res.innerHTML = 'Nome ' + nome;
+
+  var res = document.getElementById('respCity');
+  res.innerHTML = 'Cidade ' + cidade;
+  var res = document.getElementById('respCond');
+  res.innerHTML = condominio;
+  
+
+
 
 
 
