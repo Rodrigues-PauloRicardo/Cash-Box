@@ -1,6 +1,4 @@
 # Cash-Box
-Telas em HTML e CSS 
-
 <br>
 <img height=”10” src= https://github.com/Rodrigues-PauloRicardo/Cash-Box/blob/main/imgs/Captura%20de%20tela.png >
 <br>
@@ -20,7 +18,7 @@ Tabela de conteúdos
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a3a832a2-bb8a-4b88-8bd6-ed1ca9b3788f/deploy-status)](https://app.netlify.com/sites/boxcash/deploys)
 
 ### 🛠 Tecnologias
-HTML e CSS
+HTML, CSS e Javascript
 
 
 <h2>MIT License</h2>
