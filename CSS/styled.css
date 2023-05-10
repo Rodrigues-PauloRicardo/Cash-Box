@@ -25,11 +25,13 @@ section{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);    
-    min-height: 570px;
+    height: 570px;
+    width: 22rem;
     display: flex;
     flex-direction: column;
     align-items: center; 
-    overflow: hidden;       
+    overflow: hidden;  
+    border: 1PX SOLID RED;     
 }
 /* ----------------------------------------------*/
 .container{
@@ -94,13 +96,39 @@ button{
     margin-top: 15px; 
 
 }
-.confirm{
-    margin-top: 35px;
+.confirm{ 
+    margin: 10px;   
     text-align: center;
-    font-size: 30px;
-    line-height: 70px;
-    font-weight: bold;    
+    font-size: 1.5rem;    
+    font-weight: bold; 
+    border: 1px solid red; 
+    height: 100%;  
 }
+.box_user{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(174, 189, 216);
+}
+h4{
+    margin-right: 15px;
+}
+.box_city{
+    margin-top: 7px;
+    background-color: rgb(150, 163, 187);    
+}
+.box_cond{
+    margin-top: 7px;
+    background-color: rgb(174, 189, 216);
+}
+
+#respFone{
+    margin-top: 7px;
+    background-color: red;
+    color: #fff;
+}
+
+
+
 ul{
     margin-top: 30px;
     line-height: 40px;     

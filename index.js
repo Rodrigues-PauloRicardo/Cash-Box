@@ -55,7 +55,7 @@ function confirme(){
   res.innerHTML = 'Nome ' + nome;
 
   var res = document.getElementById('respCity');
-  res.innerHTML = 'Cidade ' + cidade;
+  res.innerHTML = 'Em ' + cidade;
   var res = document.getElementById('respCond');
   res.innerHTML = condominio;
   
