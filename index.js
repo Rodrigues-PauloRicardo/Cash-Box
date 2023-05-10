@@ -14,6 +14,21 @@ function next_page() {
 }
 
 
+function copyPixLink() {
+  var pixLink = 'boxcash@gmail.com';
+  var tempElement = document.createElement("textarea");
+  tempElement.value = pixLink;
+  document.body.appendChild(tempElement);
+  tempElement.select();
+ // document.execCommand("copy");
+  document.body.removeChild(tempElement);
+  alert('link copiado co sucesso!')
+  // ...
+}
+
+
+
+
 function next_page2() {
 var radios = document.getElementsByName('radio');
 localStorage.setItem('vaga', vaga);
