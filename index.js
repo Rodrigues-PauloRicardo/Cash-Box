@@ -22,7 +22,7 @@ function copyPixLink() {
   tempElement.select();
  // document.execCommand("copy");
   document.body.removeChild(tempElement);
-  alert('link copiado co sucesso!')
+  alert('link copiado com sucesso!')
   // ...
 }
 
@@ -42,10 +42,8 @@ for (var i = 0; i < radios.length; i++) {
 }
 }
 
-function confirme(){
-    
-    var fone = document.getElementById('fone').value; 
-    
+function confirme(){    
+    var fone = document.getElementById('fone').value;     
     var nome = localStorage.getItem(nome);
     var cidade = localStorage.getItem('cidade');
     var condominio = localStorage.getItem('condominio');  
