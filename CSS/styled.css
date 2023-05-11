@@ -15,8 +15,7 @@ body{
 
 img{
     width: 20rem;
-    border-radius: 8px;  
-     
+    border-radius: 8px;      
 }
 
 section{
@@ -35,26 +34,6 @@ section{
     overflow: hidden;    
     border-radius: 8px;
 } 
-
-/* ----------------------------------------------*/
-.container{
-    display: flex;
-    flex-direction: column;
-    display: flex;
-    margin-top: 40px;
-    width: 260px;    
-}
-
-.input{
-    margin-top: 20px;
-    display: flex;
-    align-self: center;
-    width: 20rem;
-    height: 32px;
-    border-radius: 5px;
-    padding: 4%;
-}
-
 button{
     height: 35px;
     width: 150px;
@@ -67,103 +46,136 @@ button{
     margin: 5px;  
 }
 
+/* ----------------------------------------------INDEX.HTML*/
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3 rem;    
+}
+.input{  
+    margin-top: 3rem; 
+    display: flex;
+    align-self: center;
+    width: 20rem;
+    height: 35px;
+    border-radius: 5px;
+    padding: 4%;    
+}
 .btn_avancar{
-    margin-top: 40px;
+    margin-top: 3rem;
 }
+/* ----------------------------------------------BOXCASH2.HTML*/
+
 .btn_proximo{
-    margin-top:80px;
+    margin-top: 2rem;
 }
-
-.botoes{    
-    margin-top: 50px;    
-}
-
-.btn_submit{
-    margin-top: 25px;
-}
-
+/* ----------------------------------------------BOXCASH3.HTML*/
 .titulo{
     text-align: center;
     font-weight: bold;
     }
+    #caixa{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        width: 260px;
+        height: 70px;
+    }
+    .box_pix{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;       
+    }
+    .img_pix{ 
+        margin-right: 10px;   
+        width: 100px;
+        height: 50px;
+    }
 
-#caixa{
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-    width: 260px;
-    height: 70px;
-}
+    #nome, #fone{
+        height: 35px;   
+    }
+    .chave{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        border-radius: 5px;
+        padding: auto;    
+        width: 90%;
+        max-width: 300px;
+        margin-top: 5%;
+        border: 2px solid rgb(27, 26, 26);
+        padding: 8px;
+    }
+    .botoes{    
+        padding: 10px;
+                 
+    }
+    .btn_submit{
+        margin-top: 10%;
+    }
+    /* ----------------------------------------------confirm.HTML*/
+    h4{
+        margin-right: 15px;
+    }
+    .box_city{
+        margin-top: 7px;
+        background-color: rgb(150, 163, 187);    
+    }
+    .box_cond{
+        margin-top: 7px;
+        background-color: rgb(174, 189, 216);
+    }
+    
+    #respFone{
+        margin-top: 7px;
+        background-color: red;
+        color: #fff;
+    }
+    /* ----------------------------------------------regras.HTML*/
 
 
-#nome, #fone{
-    height: 30px;
-}
 
-.box_pix{
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;       
-}
-.img_pix{ 
-    margin-right: 10px;   
-    width: 100px;
-    height: 50px;
-}
+    ul{
+        margin-top: 30px;
+        line-height: 40px;     
+    }
+    .btn_voltar{
+        margin-top: 10%;
+        }
+     /* ----------------------------------------------footer*/
+     footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 15px;       
+    }
 
-.btn_voltar{
-margin-top: 55px;
-}
 
-.chave{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    padding: auto;    
-    width: 260px;
-    margin-top: 30px;
-    border: 2px solid rgb(27, 26, 26);
-    padding: 8px;
-}
+
+
+/*
+
 .confirm{ 
     margin: 10px;   
     text-align: center;
     font-size: 1.5rem;    
-    font-weight: bold; 
-    border: 1px solid red; 
-    height: 100%;  
+    font-weight: bold;     
+    height: 100%;    
 }
+
 .box_user{
     display: flex;
     justify-content: center;
     background-color: rgb(174, 189, 216);
 }
-h4{
-    margin-right: 15px;
-}
-.box_city{
-    margin-top: 7px;
-    background-color: rgb(150, 163, 187);    
-}
-.box_cond{
-    margin-top: 7px;
-    background-color: rgb(174, 189, 216);
-}
+*/
 
-#respFone{
-    margin-top: 7px;
-    background-color: red;
-    color: #fff;
-}
-ul{
-    margin-top: 30px;
-    line-height: 40px;     
-}
 
-footer{
-    position: fixed;
-    bottom: 15px;
-}
+
 
 

@@ -20,9 +20,9 @@ function copyPixLink() {
   tempElement.value = pixLink;
   document.body.appendChild(tempElement);
   tempElement.select();
- // document.execCommand("copy");
+  document.execCommand("copy");
   document.body.removeChild(tempElement);
-  alert('link copiado com sucesso!')
+  alert('Link copiado com sucesso!')
   // ...
 }
 
