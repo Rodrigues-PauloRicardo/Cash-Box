@@ -13,22 +13,6 @@ function next_page() {
     }  
 }
 
-
-function copyPixLink() {
-  var pixLink = 'boxcash@gmail.com';
-  var tempElement = document.createElement("textarea");
-  tempElement.value = pixLink;
-  document.body.appendChild(tempElement);
-  tempElement.select();
-  document.execCommand("copy");
-  document.body.removeChild(tempElement);
-  alert('Link copiado com sucesso!')
-  // ...
-}
-
-
-
-
 function next_page2() {
 var radios = document.getElementsByName('radio');
 localStorage.setItem('vaga', vaga);
@@ -44,7 +28,7 @@ for (var i = 0; i < radios.length; i++) {
 
 function confirme(){    
     var fone = document.getElementById('fone').value;     
-    var nome = localStorage.getItem(nome);
+    var nome = document.getElementById('nome').value;
     var cidade = localStorage.getItem('cidade');
     var condominio = localStorage.getItem('condominio');  
 
@@ -57,16 +41,13 @@ function confirme(){
 }
   var params = new URLSearchParams(window.location.search);
   var nome = params.get('nome');
-  var fone = params.get('fone');
+  var fone = params.get('fone');  
   var cidade = params.get('cidade');
   var condominio = params.get('condominio');
 
-
-
-
-  var res = document.getElementById('respCity');
-  res.innerHTML = 'Nome ' + nome;
-
+  
+  var res = document.getElementById('respNome');
+  res.innerHTML = nome + '  ---  '+ fone;
   var res = document.getElementById('respCity');
   res.innerHTML = 'Em ' + cidade;
   var res = document.getElementById('respCond');
@@ -77,4 +58,16 @@ function confirme(){
 
 
 
+
+  function copyPixLink() {
+    var pixLink = 'boxcash@gmail.com';
+    var tempElement = document.createElement("textarea");
+    tempElement.value = pixLink;
+    document.body.appendChild(tempElement);
+    tempElement.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempElement);
+    alert('Link copiado com sucesso!')
+    // ...
+  }
 
