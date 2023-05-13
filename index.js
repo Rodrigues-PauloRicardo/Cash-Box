@@ -31,16 +31,13 @@ function confirme(){
     var cidade = localStorage.getItem('cidade');
     var condominio = localStorage.getItem('condominio');  
 
-   
-
-
     if (nome === '' || fone === '') {
       alert('Preencha todos os Campos')
     } else {
-        window.location.href = "/confirm.html?cidade=" + cidade + "&condominio=" + condominio + "&nome=" + nome + "&fone=" + fone;  
-        
+        window.location.href = "/confirm.html?cidade=" + cidade + "&condominio=" + condominio + "&nome=" + nome + "&fone=" + fone; 
     }
 }
+
   var params = new URLSearchParams(window.location.search);
   var nome = params.get('nome');
   var fone = params.get('fone');  
