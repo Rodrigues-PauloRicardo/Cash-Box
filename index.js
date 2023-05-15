@@ -25,7 +25,9 @@ function next_page2() {
   }  
 }
 
-function confirme(){    
+function confirme(){ 
+  
+  
     var fone = document.getElementById('fone').value;     
     var nome = document.getElementById('nome').value;
     var cidade = localStorage.getItem('cidade');
@@ -67,6 +69,12 @@ function confirme(){
     // ...
   }
 
+
+
+
+
+
+
 // Cria um objeto Date com a data e hora atuais
 var dataAtual = new Date();
 var dia = dataAtual.getDate();
@@ -85,10 +93,16 @@ if (total>24){
   mes = mes + 1;
  
 }
+
+
+
 console.log('Liberar á vaga até as '  + total + ' horas');
 console.log('hoje é dia ' + dia);
 console.log('do mês de ' + mes);
 console.log(hora + ':' + minuto + ':' + segundo);
 
 document.getElementById("respFone").innerHTML = `ATENÇÃO LIBERAR VAGA ATÉ <br> ${total} HORAS do dia ${dia}/${mes}`;
-    
+   
+
+
+ 
