@@ -29,8 +29,9 @@ function confirme(){
     var fone = document.getElementById('fone').value;     
     var nome = document.getElementById('nome').value;
     var cidade = localStorage.getItem('cidade');
-    var condominio = localStorage.getItem('condominio');  
-
+    var condominio = localStorage.getItem('condominio'); 
+    
+   
     if (nome === '' || fone === '') {
       alert('Preencha todos os Campos')
     } else {
@@ -54,13 +55,6 @@ function confirme(){
   var res = document.getElementById('respVaga');
   res.innerHTML = 'VAGA '+ vaga;
 
-  
-   
-
-
-
-
-
   function copyPixLink() {
     var pixLink = 'boxcash@gmail.com';
     var tempElement = document.createElement("textarea");
@@ -73,3 +67,28 @@ function confirme(){
     // ...
   }
 
+// Cria um objeto Date com a data e hora atuais
+var dataAtual = new Date();
+var dia = dataAtual.getDate();
+var mes = dataAtual.getMonth() + 1;
+// Obtém a hora local
+var hora = dataAtual.getHours();
+// Obtém o minuto local
+var minuto = dataAtual.getMinutes();
+// Obtém o segundo local
+var segundo = dataAtual.getSeconds();
+// Exibe a hora local no formato "HH:MM:SS"
+
+var total = hora + 3;
+if (total>24){
+  total = total -24; 
+  mes = mes + 1;
+ 
+}
+console.log('Liberar á vaga até as '  + total + ' horas');
+console.log('hoje é dia ' + dia);
+console.log('do mês de ' + mes);
+console.log(hora + ':' + minuto + ':' + segundo);
+
+document.getElementById("respFone").innerHTML = `ATENÇÃO LIBERAR VAGA ATÉ <br> ${total} HORAS do dia ${dia}/${mes}`;
+    
