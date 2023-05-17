@@ -71,10 +71,6 @@ function confirme(){
 
 
 
-
-
-
-
 // Cria um objeto Date com a data e hora atuais
 var dataAtual = new Date();
 var dia = dataAtual.getDate();
