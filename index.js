@@ -101,4 +101,22 @@ document.getElementById("respFone").innerHTML = `ATENÇÃO LIBERAR VAGA ATÉ <br
    
 
 
- 
+function historic() {
+  var nome = localStorage.getItem('nome');
+  var fone = localStorage.getItem('fone');
+  var cidade = localStorage.getItem('cidade');
+  var condominio = localStorage.getItem('condominio');
+  var vaga = localStorage.getItem('vaga');
+
+  var resNome = document.getElementById('respNome');
+  resNome.textContent = nome + '  ---  ' + fone;
+  var resCity = document.getElementById('respCity');
+  resCity.textContent = 'Em ' + cidade;
+  var resCond = document.getElementById('respCond');
+  resCond.textContent = condominio;
+  var resVaga = document.getElementById('respVaga');
+  resVaga.textContent = 'VAGA ' + vaga;
+
+  window.location.href = "./confirm.html";
+}
+
